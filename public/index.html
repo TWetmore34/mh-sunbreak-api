@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MH subreak API</title>
+</head>
+<body>
+    <h1>Enter Armor Info Here</h1>
+    <form action="">
+        <label for="set">Which set?</label>
+        <select class='form4' name="armor" id="set">
+            <!-- this will become a real long dropdown for all the set options- each value will b an id thats stored w its text as the key -->
+            <option value=""selected disabled>--</option>
+            <option value="1">hello</option>
+            <option value="2">testing</option>
+            <option value="3">third</option>
+        </select>
+        <input id="set-submit" type="submit" value="Select armor set">
+    </form>
+    <form action="">
+        <label for="type">Type of Armor</label>
+        <select class='form1' id="type" name="armor">
+            <option value="--" disabled selected>--</option>
+            <option value="helm">Helmet</option>
+            <option value="chest">Chestpiece</option>
+            <option value="Braces">Braces</option>
+            <option value="Waist">Waist</option>
+            <option value="Legs">Legs</option>
+        </select>
+        <br>
+        <label for="name">Piece Name</label>
+        <input class='form1' type="text" id="name" name="armor">
+        <label for="phys">Physical Defense</label>
+        <input class='form1' type="number" id="phys" name="armor">
+        <label for="fire">Fire resist</label>
+        <input class='form1' type="number" id="fire" name="armor">
+        <label for="water">Water resist</label>
+        <input class='form1' type="number" id="water" name="armor">
+        <label for="thunder">Thunder resist</label>
+        <input class='form1' type="number" id="thunder" name="armor">
+        <label for="ice">Ice resist</label>
+        <input class='form1' type="number" id="ice" name="armor">
+        <label for="dragon">Dragon (deeznutsacrossurchin) resist</label>
+        <input class='form1' type="number" id="dragon" name="armor">
+        <input type="submit" value="Add Resists" id="armor">
+    </form>
+    <textarea id='stats' name="stats" id="" cols="30" rows="10" placeholder="stats"></textarea>
+    <form action="">
+        <label for="skill">Skill Name</label>
+        <input class="form2" type="text" id="skill" name="armor">
+        <label for="skill-number">Skill Level</label>
+        <input class='form2' type="number" id="skill-number" name="armor">
+        <input id='skillsub' type="submit" value="Add Skill">
+    </form>
+    <textarea id='skills' name="skills" id="" cols="30" rows="10" placeholder="skills"></textarea>
+
+    <form action="">
+        <label for="quant">How Many Slots?</label>
+        <input type="number" name="quant" id="slot-num">
+        <select name="slot" id="slot-list">
+            <option value="--" disabled selected>--</option>
+            <option value="oneSlot">One Slot</option>
+            <option value="twoSlot">Two Slot</option>
+            <option value="threeSlot">Three Slot</option>
+            <option value="fourSlot">Four Slot</option>
+        </select>
+        <input type="submit" value="Add Slots" id="slotSub">
+    </form>
+    <textarea id='slots' name="slots" id="" cols="30" rows="10" placeholder="slots"></textarea>
+    <br>
+    <textarea name="result" id="final" cols="30" rows="10" placeholder="display the final object here"></textarea>
+    <button id="submit">Submit All</button>
+    <script src="./index.js"></script>
+</body>
+</html>
